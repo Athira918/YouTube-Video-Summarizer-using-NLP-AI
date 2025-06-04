@@ -1,1 +1,10 @@
 # YouTube-Video-Summarizer-using-NLP-AI
+This project titled "YouTube Video Summarizer" is a comprehensive solution designed to automatically generate summaries from YouTube videos using both traditional NLP techniques and advanced AI models. The core idea behind the project is to help users quickly understand the essence of long-form video content without needing to watch the entire video. This is particularly useful for students, researchers, and content analysts who deal with large volumes of informational or educational video data.
+
+The process begins by accepting a YouTube video URL, from which the system extracts the unique video ID. It supports various YouTube link formats, making it flexible and user-friendly. Once the video ID is obtained, the program uses the youtube-transcript-api to fetch the full transcript (subtitles) of the video. This transcript forms the foundation for the summarization process.
+
+The summarization is done in two parallel ways. First, it uses frequency-based extractive summarization with NLTK, where the most important sentences are selected based on their relevance and word frequency. This method is straightforward, fast, and interpretable. The second approach involves an AI-powered abstractive summarization using OpenRouter’s Mistral model. This method produces a more human-like, meaningful summary by understanding the context and semantics of the video content, rather than just picking important sentences.
+
+Additionally, the project includes well-structured formatting for displaying the summaries. Using colorama and text styling, the output is displayed in the terminal in a clean, visually distinct format that separates the AI summary, NLP summary, and video metadata. This enhances readability and user experience.
+
+Overall, the project demonstrates how modern NLP tools and APIs can be integrated to build an end-to-end solution that transforms video content into readable, summarized insights. It is modular, easy to extend, and paves the way for further enhancements like web interfaces, multi-language support, and PDF export features.
